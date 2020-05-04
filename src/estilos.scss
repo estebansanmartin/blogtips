@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Megrim|Raleway:300|Source+Code+Pro&display=swap');
+// Import RBX 
+@import "../node_modules/bulma/bulma.sass";
+@import "../node_modules/rbx/rbx.sass";
+@import "../node_modules/bulma/sass/utilities/functions.sass";
+// Set your brand colors
+$purple: #8A4D76;
+$pink: #FA7C91;
+$brown: #757763;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
+$cyan: #00adb5;
+$black: #222831;
+$gray: #393e46;
+$blue: #323edd;
+$white: #eeeeee;
+
+// Update Bulma's global variables
+$title: "Raleway";
+$subtitle: "Source Code Pro";
+$menu: "Megrim";
+$family-sans-serif: "Nunito", sans-serif;
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$primary: $purple;
+$link: $pink;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: $beige-lighter;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+// Import only what you need from Bulma
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/layout/hero.sass";
+@import "../node_modules/bulma/sass/layout/section.sass";
+
+.title {
+    font-size: 10vw !important;
+    font-family: $menu;
+    color: $beige-light !important;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    //text-shadow: 3px 5px $cyan;
+}
+.title-home {
+    font-size: 10vw !important;
+    font-family: $menu;
+    font-weight: 900 !important;
+    color: transparent !important;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    background-size: cover;
+    background-clip: text;
+
+    //text-shadow: 3px 5px $cyan;
+}
+.svg {
+    mask: url(./images/logo.png) no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+}
+.image {
+    filter: drop-shadow(5px 5px 10px rgb(92, 91, 91));
+    transition: 1.5s ease-in-out;
+    &:hover {
+        filter: none;
+    }
+}
+.subtitle {
+    text-align: left;
+    font-family: $subtitle;
+    letter-spacing: 5px;
+    line-height: 2em !important;
+}
+.text-menu {
+    font-family: $menu;
+    letter-spacing: 5px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: $gray !important;
+    &:hover {
+        color: $pink !important;
+    }
+}
+.text {
+    font-family: $subtitle;
+    text-align: left;
+    font-size: large !important;
+    letter-spacing: 2px;
+}
+.buttom {
+    font-family: $subtitle;
+}
+.content-gsap {
+    visibility: hidden;
+}
+.link {
+    font-family: $subtitle;
+    color: $pink !important;
+    letter-spacing: 12px;
+}
+.text-footer {
+    font-family: $subtitle;
+    font-size: medium;
+    letter-spacing: 2px;
+    text-align: center;
+}
